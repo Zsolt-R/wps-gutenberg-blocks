@@ -10,6 +10,7 @@ module.exports = [
 		entry: {
 			'wps-guten-blocks-editor': './src/scss/wps-blocks-editor.scss',
 			'wps-grid': './src/scss/wps-grid.scss',
+			'wps-editor-grid': './src/scss/wps-editor-grid.scss',
 			'block-wps-prime-grid': './src/components/grid/grid.js',
 			'block-wps-prime-grid-block':
 				'./src/components/grid-block/grid-block.js',

@@ -16,7 +16,7 @@
  * Plugin Name:       WPS Gutenberg Blocks
  * Plugin URI:        wps-prime.pw/
  * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Zsolt Revay G.
  * Author URI:        https://wpshapers.com/
  * License:           GPL-2.0+

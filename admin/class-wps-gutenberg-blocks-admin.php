@@ -147,23 +147,30 @@ class Wps_Gutenberg_Blocks_Admin {
 		wp_enqueue_script( 'wps-guten-blocks-settings-js' );
 
 		wp_register_style(
-			'wps-gutenberg-editor-grid-css',
+			'wps-gutenberg-editor-css',
 			plugin_dir_url( __FILE__ ) . 'gutenberg/wps-guten-blocks-editor.css',
 			array(),
 			filemtime( plugin_dir_path( __FILE__ ) . 'gutenberg/wps-guten-blocks-editor.css' )
 		);
-
 		wp_register_style(
-			'wps-gutenberg-grid',
-			plugin_dir_url( __FILE__ ) . 'gutenberg/wps-grid.css',
+			'wps-gutenberg-editor-grid-css',
+			plugin_dir_url( __FILE__ ) . 'gutenberg/wps-editor-grid.css',
 			array(),
-			filemtime( plugin_dir_path( __FILE__ ) . 'gutenberg/wps-grid.css' )
+			filemtime( plugin_dir_path( __FILE__ ) . 'gutenberg/wps-editor-grid.css' )
 		);
 
+		// wp_register_style(
+		// 'wps-gutenberg-grid',
+		// plugin_dir_url( __FILE__ ) . 'gutenberg/wps-grid.css',
+		// array(),
+		// filemtime( plugin_dir_path( __FILE__ ) . 'gutenberg/wps-grid.css' )
+		// );
+
+		wp_enqueue_style( 'wps-gutenberg-editor-css' );
+		// wp_enqueue_style( 'wps-gutenberg-grid' );
 		wp_enqueue_style( 'wps-gutenberg-editor-grid-css' );
-		wp_enqueue_style( 'wps-gutenberg-grid' );
 		// Overwrite defaults with customizer generated styles
-		wp_add_inline_style( 'wps-gutenberg-editor-grid-css', Wps_Gutenberg_Blocks_Customizer::customizer_style() );
+		wp_add_inline_style( 'wps-gutenberg-editor-css', Wps_Gutenberg_Blocks_Customizer::customizer_style() );
 
 	}
 	/**
