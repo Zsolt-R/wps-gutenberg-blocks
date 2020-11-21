@@ -17,6 +17,7 @@ import {
 	ToolbarGroup,
 	ToolbarButton,
 	IsolatedEventContainer,
+	Popover,
 } from '@wordpress/components';
 
 import {
@@ -105,7 +106,7 @@ const Edit = ( props ) => {
 	);
 
 	return (
-		<>
+		<>		
 			<InspectorControls>
 				<PanelBody
 					title={ __( 'Grid Layout', 'wps-gutenberg-blocks' ) }
@@ -149,7 +150,7 @@ const Edit = ( props ) => {
 					/>
 				</ToolbarGroup>
 			</BlockControls>
-			<IsolatedEventContainer>
+			<IsolatedEventContainer>			
 				<ConditionalWrapper
 					condition={ holderClasses || ! _.isEmpty( styles ) }
 					wrapper={ ( children ) => (
@@ -175,14 +176,14 @@ const Edit = ( props ) => {
 							<div className={ wrapperClasses }>{ children }</div>
 						) }
 					>
-						<div className={ gridClasses }>
+						<div className={ gridClasses }>	
 							<InnerBlocks
 								orientation="horizontal"
 								allowedBlocks={ allowedBlocks }
 								// /renderAppender={() => null}
 								template={ null }
-								templateLock="all"
-							/>
+								templateLock="all"				
+							/>						
 						</div>
 					</ConditionalWrapper>
 				</ConditionalWrapper>
