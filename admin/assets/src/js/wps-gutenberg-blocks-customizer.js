@@ -97,8 +97,7 @@ import pSBC from './helpers/psbc';
         //	Background colors
         //////////////////////////////////
         wp.customize('wps_gb_customizer_settings[background_color_one]', function(value) {
-                value.bind(function(newval) {
-                        console.log(newval);
+                value.bind(function(newval) {                
                         document.documentElement.style.setProperty('--background-color-one', newval,
                         );
                     }
