@@ -102,11 +102,11 @@ class Wps_Gutenberg_Blocks_Customizer {
 	}
 
 	public static function customizer_output() {
-		$output  = '<!--Customizer CSS-->';
+		$output  = '<!--GB Customizer CSS-->';
 		$output .= '<style type="text/css">';
 		$output .= self::customizer_style();
 		$output .= '</style>';
-		$output .= '<!--/Customizer CSS-->';
+		$output .= '<!--/GB Customizer CSS-->';
 		echo $output;
 	}
 
