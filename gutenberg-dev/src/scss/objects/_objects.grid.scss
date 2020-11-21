@@ -1,3 +1,15 @@
+.wps-row:not(.wps-row--align-full) {
+    max-width: var(--content-width);
+    margin: 0 auto;
+}
+
+/**
+Delegate width to wrapper
+*/
+.o-wrapper .wps-row {
+    max-width: 100%;
+}
+
 .wps-row {
     display: flex;
     flex-flow: row wrap;

@@ -54,6 +54,7 @@ export default function save( props ) {
 	const gridClasses = classnames(		
 		'wps-row',
 		attributes.itemSpacing && `wps-row--spacing-${ attributes.itemSpacing }`,
+		attributes.align && `wps-row--align-${ attributes.align }`,
 		attributes.vAlign && `wps-row--vAlign-${ attributes.vAlign }`,
 		attributes.hAlign && `wps-row--hAlign-${ attributes.hAlign }`,		
 		attributes.equalHeightCols && 'wps-row--equal-height-col',

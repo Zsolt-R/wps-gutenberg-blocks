@@ -271,7 +271,7 @@ export default compose( [
 			const { getBlockOrder } = registry.select( 'core/block-editor' );
 
 			// Update own alignment.
-			setAttributes( { verticalAlignment } );
+			setAttributes( { verticalAlignment } );			
 
 			// Update all child Column Blocks to match
 			const innerBlockClientIds = getBlockOrder( clientId );

@@ -16,7 +16,7 @@
  * Plugin Name:       WPS Gutenberg Blocks
  * Plugin URI:        wps-prime.pw/
  * Description:       Extend gutenberg editor with a set of custom blocks
- * Version:           1.0.1
+ * Version:           1.0.2
  * Author:            Zsolt Revay G.
  * Author URI:        https://wpshapers.com/
  * License:           GPL-2.0+

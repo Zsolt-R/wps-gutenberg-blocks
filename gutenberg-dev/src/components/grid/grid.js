@@ -30,7 +30,7 @@ registerBlockType( 'wps-gutenberg/grid', {
 const withCustomClassName = createHigherOrderComponent( ( BlockListBlock ) => {
 	return ( props ) => {
 		if ( props.name === 'wps-gutenberg/grid' ) {
-			const classNames = [ 'wps-grid' ];
+			const classNames = [ 'wps-grid' ];		
 
 			if ( props.attributes.vAlign ) {
 				classNames.push(
@@ -42,6 +42,12 @@ const withCustomClassName = createHigherOrderComponent( ( BlockListBlock ) => {
 					`is-aligned-horizontal-${ props.attributes.hAlign }`
 				);
 			}
+			if ( props.attributes.align ) {
+				classNames.push(
+					`is-aligned-${ props.attributes.align }`
+				);
+			}
+
 
 			const classes = classnames( classNames );
 
