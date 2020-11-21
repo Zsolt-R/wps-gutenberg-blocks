@@ -7,6 +7,15 @@
 /*
 Grid Controls UI
 */
+.wp-block {
+    max-width: var(--content-width);
+}
+
+.wps-grid-block {
+    .wp-block {
+        max-width: 100%;
+    }
+}
 
 .wps-gb-grid {
 
