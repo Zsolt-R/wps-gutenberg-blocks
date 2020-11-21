@@ -35,7 +35,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'WPS_GUTENBERG_BLOCKS_VERSION', '1.0.0' );
+define( 'WPS_GUTENBERG_BLOCKS_VERSION', '1.0.1' );
 define( 'WPS_GUTENBERG_BLOCKS_OPTIONS_PREFIX', 'wps_gb' );
 define( 'WPS_GUTENBERG_BLOCKS_OPTIONS_NAME', 'wps_gb_customizer_settings' );
 
