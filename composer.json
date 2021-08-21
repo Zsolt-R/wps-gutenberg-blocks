@@ -1,0 +1,6 @@
+{
+    "name": "wpshapers/wps-blocks",
+    "type": "wordpress-plugin",
+    "description": "Wordpress Gutenberg blocks",
+    "license": "GPL-2.0+"
+}
